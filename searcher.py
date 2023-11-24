@@ -46,7 +46,7 @@ output_file_name = input("Enter the output file name (e.g., 'output.txt'): ")
 output_file_path = os.path.join(base_directory, output_file_name)
 
 # Define paths to exclude (modify as needed)
-exclude_paths = [
+exclude_paths = [ "node_modules"
     # Add paths to exclude here, e.g., os.path.join(base_directory, 'node_modules')
 ]
 

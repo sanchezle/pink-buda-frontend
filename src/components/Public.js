@@ -4,7 +4,7 @@ const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>B A R C E L O V E &#x2764 </h1>
+                <h1>B A R C E L O V E </h1>
             </header>
             <main className="public__main">
                 <p>Located in Beautiful Downtown Foo City, Dan D. Repairs  provides a trained staff ready to meet your tech repair needs.</p>
@@ -19,6 +19,7 @@ const Public = () => {
             </main>
             <footer>
                 <Link to="/login">Employee Login</Link>
+                <Link to= "/register"> Register</Link>
             </footer>
         </section>
 

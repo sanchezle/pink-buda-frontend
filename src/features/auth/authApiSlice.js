@@ -44,11 +44,31 @@ export const authApiSlice = apiSlice.injectEndpoints({
                 }
             }
         }),
+        // New registration mutation
+        registerUser: builder.mutation({
+            query: newUserData => ({
+                url: '/users',
+                method: 'POST',
+                body: newUserData,
+            }),
+            async onQueryStarted(arg, { dispatch, queryFulfilled }) {
+                try {
+                    // Handle the response from the server after registration
+                    const { data } = await queryFulfilled;
+                    console.log('Registration successful:', data);
+                    // Optional: Dispatch login or other actions after successful registration
+                } catch (err) {
+                    console.error('Registration error:', err);
+                }
+            }
+        }), 
+        
     })
 })
 
 export const {
     useLoginMutation,
+    useRegisterUserMutation,
     useSendLogoutMutation,
     useRefreshMutation,
-} = authApiSlice 
+} = authApiSlice; 

@@ -15,7 +15,7 @@ import PersistLogin from './features/auth/PersistLogin'
 import RequireAuth from './features/auth/RequireAuth'
 import { ROLES } from './config/roles'
 import useTitle from './hooks/useTitle';
-
+import Register from './features/users/Register'
 function App() {
   useTitle('Dan D. Repairs')
 
@@ -25,6 +25,7 @@ function App() {
         {/* public routes */}
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
+        <Route path="register" element={<Register />}/>
 
         {/* Protected Routes */}
         <Route element={<PersistLogin />}>
@@ -52,7 +53,8 @@ function App() {
             </Route>
           </Route>
         </Route>{/* End Protected Routes */}
-
+        
+      
       </Route>
     </Routes >
   );
