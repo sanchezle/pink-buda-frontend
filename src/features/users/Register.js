@@ -2,8 +2,9 @@ import React, { useRef, useState, useEffect } from 'react';
 import { useRegisterUserMutation } from '../auth/authApiSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheck, faTimes, faInfoCircle } from '@fortawesome/free-solid-svg-icons';
-import {Link} from 'react-router-dom';
+import {Link, useNavigate} from 'react-router-dom';
 import './formStyle.css';
+
 
 const USER_REGEX = /^[A-z][A-z0-9-_]{3,23}$/;
 const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
@@ -11,6 +12,7 @@ const PWD_REGEX = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/;
 const Register = () => {
     const userRef = useRef();
     const errRef = useRef();
+    const navigate = useNavigate();
     const [username, setUsername] = useState('');
     const [validName, setValidName] = useState(false);
     const [userFocus, setUserFocus] = useState(false);
@@ -61,6 +63,7 @@ const Register = () => {
             setPassword('');
             setConfirmPassword('');
             setEmail('');
+            navigate('/confirmEmail');
         } catch (err) {
             if (!err?.data) {
                 setErrMsg('No Server Response');
@@ -76,9 +79,7 @@ const Register = () => {
             {success ? (
                 <section>
                     <h1>Success!</h1>
-                    <p>
-                    <Link to="/login">Login</Link>
-                    </p>
+                    <p>Check your email to verify your account.</p>
                 </section>
             ) : (
                 <section>
@@ -184,3 +185,6 @@ const Register = () => {
 };
 
 export default Register;
+
+
+

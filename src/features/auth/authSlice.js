@@ -1,21 +1,30 @@
-import { createSlice } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit';
+
+const initialState = {
+    token: null,
+    resetPasswordEmail: null, // Add a new field for reset password email
+};
 
 const authSlice = createSlice({
     name: 'auth',
-    initialState: { token: null },
+    initialState,
     reducers: {
         setCredentials: (state, action) => {
-            const { accessToken } = action.payload
-            state.token = accessToken
+            const { accessToken } = action.payload;
+            state.token = accessToken;
         },
-        logOut: (state, action) => {
-            state.token = null
+        setResetPasswordEmail: (state, action) => {
+            state.resetPasswordEmail = action.payload; // Add a new reducer for setting reset password email
+        },
+        logOut: (state) => {
+            state.token = null;
+            state.resetPasswordEmail = null; // Clear reset password email on logout
         },
     }
-})
+});
 
-export const { setCredentials, logOut } = authSlice.actions
+export const { setCredentials, setResetPasswordEmail, logOut } = authSlice.actions;
 
-export default authSlice.reducer
+export default authSlice.reducer;
 
-export const selectCurrentToken = (state) => state.auth.token
+export const selectCurrentToken = (state) => state.auth.token;

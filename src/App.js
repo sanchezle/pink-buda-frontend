@@ -16,8 +16,11 @@ import RequireAuth from './features/auth/RequireAuth'
 import { ROLES } from './config/roles'
 import useTitle from './hooks/useTitle';
 import Register from './features/users/Register'
+import ResetPassword from './features/auth/ResetPassword';
+import PasswordResetRequest from './features/auth/PasswordResetRequest';
+import EmailConfirmed from './features/users/EmailConfirmed';
 function App() {
-  useTitle('Dan D. Repairs')
+  useTitle('Barcelove')
 
   return (
     <Routes>
@@ -26,12 +29,21 @@ function App() {
         <Route index element={<Public />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />}/>
+        <Route path="passwordResetRequest" element={<PasswordResetRequest/>}/>
+        <Route path="/reset-password" element={<ResetPassword/>} />
+            {/* Route for EmailConfirmed*/}
+    
+        <Route path="emailConfirmed" element={<EmailConfirmed/>} />
+
+              {/* Route for Password Reset */}
+       
 
         {/* Protected Routes */}
         <Route element={<PersistLogin />}>
           <Route element={<RequireAuth allowedRoles={[...Object.values(ROLES)]} />}>
             <Route element={<Prefetch />}>
               <Route path="dash" element={<DashLayout />}>
+              <Route path="ResetPasssword" element={<ResetPassword />}/>
 
                 <Route index element={<Welcome />} />
 

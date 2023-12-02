@@ -67,6 +67,8 @@ export const usersApiSlice = apiSlice.injectEndpoints({
                 { type: 'User', id: arg.id }
             ]
         }),
+
+
     }),
 })
 
@@ -75,6 +77,8 @@ export const {
     useAddNewUserMutation,
     useUpdateUserMutation,
     useDeleteUserMutation,
+
+
 } = usersApiSlice
 
 // returns the query result object

@@ -107,7 +107,7 @@ const DashHeader = () => {
         </button>
     )
 
-    const errClass = isError ? "errmsg" : "offscreen"
+    const errClass = isError ? "errmsg" : "offsbarcelove/public/favicon.icocreen"
 
     let buttonContent
     if (isLoading) {

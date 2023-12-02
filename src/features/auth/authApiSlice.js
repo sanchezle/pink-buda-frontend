@@ -1,5 +1,5 @@
-import { apiSlice } from "../../app/api/apiSlice"
-import { logOut, setCredentials } from "./authSlice"
+import { apiSlice } from "../../app/api/apiSlice";
+import { logOut, setCredentials } from "./authSlice";
 
 export const authApiSlice = apiSlice.injectEndpoints({
     endpoints: builder => ({
@@ -8,7 +8,7 @@ export const authApiSlice = apiSlice.injectEndpoints({
                 url: '/auth',
                 method: 'POST',
                 body: { ...credentials }
-            })
+            }),
         }),
         sendLogout: builder.mutation({
             query: () => ({
@@ -17,14 +17,13 @@ export const authApiSlice = apiSlice.injectEndpoints({
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
-                    const { data } = await queryFulfilled
-                    console.log(data)
-                    dispatch(logOut())
+                    await queryFulfilled;
+                    dispatch(logOut());
                     setTimeout(() => {
-                        dispatch(apiSlice.util.resetApiState())
-                    }, 1000)
+                        dispatch(apiSlice.util.resetApiState());
+                    }, 1000);
                 } catch (err) {
-                    console.log(err)
+                    console.log(err);
                 }
             }
         }),
@@ -35,40 +34,49 @@ export const authApiSlice = apiSlice.injectEndpoints({
             }),
             async onQueryStarted(arg, { dispatch, queryFulfilled }) {
                 try {
-                    const { data } = await queryFulfilled
-                    console.log(data)
-                    const { accessToken } = data
-                    dispatch(setCredentials({ accessToken }))
+                    const { data } = await queryFulfilled;
+                    dispatch(setCredentials({ accessToken: data.accessToken }));
                 } catch (err) {
-                    console.log(err)
+                    console.log(err);
                 }
             }
         }),
-        // New registration mutation
         registerUser: builder.mutation({
             query: newUserData => ({
                 url: '/users',
                 method: 'POST',
                 body: newUserData,
             }),
-            async onQueryStarted(arg, { dispatch, queryFulfilled }) {
-                try {
-                    // Handle the response from the server after registration
-                    const { data } = await queryFulfilled;
-                    console.log('Registration successful:', data);
-                    // Optional: Dispatch login or other actions after successful registration
-                } catch (err) {
-                    console.error('Registration error:', err);
-                }
-            }
-        }), 
-        
+        }),
+        confirmEmail: builder.mutation({
+            query: token => ({
+                url: `/auth/confirmEmail/${token}`,
+                method: 'GET',
+            }),
+        }),
+        passwordResetRequest: builder.mutation({
+            query: email => ({
+                url: '/auth/reset-password-request',
+                method: 'POST',
+                body: { email },
+            }),
+        }),
+        resetPasswordConfirm: builder.mutation({
+            query: ({ email, token, password }) => ({
+                url: '/auth/reset-password-confirm',
+                method: 'POST',
+                body: { email, token, password },
+            }),
+        }),
     })
-})
+});
 
 export const {
     useLoginMutation,
     useRegisterUserMutation,
     useSendLogoutMutation,
     useRefreshMutation,
-} = authApiSlice; 
+    useConfirmEmailMutation,
+    usePasswordResetRequestMutation,
+    useResetPasswordConfirmMutation, // renamed for clarity
+} = authApiSlice;

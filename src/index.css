@@ -384,3 +384,6 @@ tr {
   height: 100%;
   position: absolute;
 }
+#logo {
+  width: 300px;
+}
