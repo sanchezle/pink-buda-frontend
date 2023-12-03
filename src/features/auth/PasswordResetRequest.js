@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { usePasswordResetRequestMutation } from './authApiSlice';
-import { setResetPasswordEmail } from './authSlice'; // Ensure this action is correctly imported from your authSlice
+import { setResetPasswordEmail } from './authSlice'; // Ensure this action is correctly imported
 
 const PasswordResetRequest = () => {
     const [email, setEmail] = useState('');
-    const [passwordResetRequest] = usePasswordResetRequestMutation(); // Removed unused destructured properties
+    const [passwordResetRequest] = usePasswordResetRequestMutation();
     const history = useNavigate();
     const dispatch = useDispatch();
 
@@ -14,12 +14,16 @@ const PasswordResetRequest = () => {
         e.preventDefault();
         try {
             await passwordResetRequest(email).unwrap();
-            // Dispatch the email to Redux store after successful request
+            // Dispatch the email to the Redux store after a successful request
             dispatch(setResetPasswordEmail(email));
+            // Navigate to the reset password page
+            console.log('here we shoulg go to resetPassword component')
+
             history('/reset-password');
         } catch (err) {
             console.error('Failed to send password reset email:', err);
-            // Handle error here (e.g., show an error message to the user)
+            console.log(err)
+            // Handle the error, e.g., show an error message to the user
         }
     };
 

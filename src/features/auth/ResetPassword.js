@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { useResetPasswordConfirmMutation } from './authApiSlice';
 
 const ResetPassword = () => {
-    const email = useSelector((state) => state.resetPassword.email); // Fetch email from new Redux slice
+    const email = useSelector((state) => state.auth.resetPasswordEmail);
     const [token, setToken] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
@@ -14,16 +14,21 @@ const ResetPassword = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
+
         if (password !== confirmPassword) {
             setMessage("Passwords don't match");
             return;
         }
 
         try {
-            await resetPasswordConfirm({ email, token, password }).unwrap();
+            // Ensure this payload structure matches what your backend expects
+            const payload = { email, token, newPassword: password };
+            await resetPasswordConfirm(payload).unwrap();
+
             setMessage('Password reset successfully');
-            navigate('/login');
+            navigate('/login'); // Navigate to login page upon successful reset
         } catch (err) {
+            // Display error message from server or a default error message
             setMessage(err.data?.message || 'Failed to reset password');
         }
     };
@@ -36,8 +41,8 @@ const ResetPassword = () => {
                 <input
                     type="text"
                     id="token"
-                    onChange={(e) => setToken(e.target.value)}
                     value={token}
+                    onChange={(e) => setToken(e.target.value)}
                     required
                 />
 
@@ -45,8 +50,8 @@ const ResetPassword = () => {
                 <input
                     type="password"
                     id="password"
-                    onChange={(e) => setPassword(e.target.value)}
                     value={password}
+                    onChange={(e) => setPassword(e.target.value)}
                     required
                 />
 
@@ -54,11 +59,12 @@ const ResetPassword = () => {
                 <input
                     type="password"
                     id="confirmPassword"
-                    onChange={(e) => setConfirmPassword(e.target.value)}
                     value={confirmPassword}
+                    onChange={(e) => setConfirmPassword(e.target.value)}
                     required
                 />
-                <button disabled={isLoading}>Reset Password</button>
+
+                <button type="submit" disabled={isLoading}>Reset Password</button>
             </form>
             {message && <p>{message}</p>}
         </section>
