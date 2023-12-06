@@ -1,6 +1,6 @@
 {
   "name": "lesson_13-frontend",
-  "proxy": "http://localhost:3000",
+  "proxy": "https://barcelove-ec86f3202794.herokuapp.com/",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
@@ -13,7 +13,7 @@
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.2",
     "react-router-dom": "^6.3.0",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-spinners": "^0.13.4"
   },
   "scripts": {
