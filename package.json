@@ -1,5 +1,5 @@
 {
-  "name": "lesson_13-frontend",
+  "name": "barcelove-client",
   "proxy": "https://barcelove-ec86f3202794.herokuapp.com/",
   "version": "0.1.0",
   "dependencies": {
