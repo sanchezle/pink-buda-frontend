@@ -64,17 +64,21 @@
 }
 
 /* || GENERAL STYLES */
-
 body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh; /* Ensures body is at least viewport height */
+  width: 100%; /* Ensures body doesn't exceed viewport width */
+  overflow-x: hidden; /* Prevents horizontal overflow */
   font-family: 'Nunito', sans-serif;
-  min-height: 100vh;
   background-color: var(--BGCOLOR);
   color: var(--COLOR);
   background-image: url('./img/background.jpg');
   background-size: cover;
-  background-position: top right;
-  background-blend-mode: normal;
+  background-position: center;
+  background-repeat: no-repeat; /* Ensures the image doesn't tile */
 }
+
 
 input,
 button,
