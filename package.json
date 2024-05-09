@@ -1,6 +1,6 @@
 {
   "name": "barcelove-client",
-  "proxy": "https://barcelove-ec86f3202794.herokuapp.com/",
+  "proxy": "https://barcelove2-env.eba-fvp7hrw3.eu-west-3.elasticbeanstalk.com/",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
