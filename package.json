@@ -1,6 +1,6 @@
 {
   "name": "barcelove-client",
-  "proxy": "https://barcelove2-env.eba-fvp7hrw3.eu-west-3.elasticbeanstalk.com/",
+  "proxy": "https://barcelove.azurewebsites.net/",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
