@@ -1,17 +1,16 @@
 import { Link } from 'react-router-dom'
-import Barcelovelog from '../img/Barcelovelog.png'
+
 
 const Public = () => {
     const content = (
         <section className="public">
             <header>
-                <h1>B A R C E L O V E </h1> 
+                <h1>PINK BUDA BURGER </h1> 
             </header>
             <main className="public__main">
                 <p></p>
                 <address className="public__addr">
-                    <img id='logo' src={Barcelovelog} alt="Barcelove logo" />
-            
+
                 </address>
                 <br />
                 <p></p>

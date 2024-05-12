@@ -1,5 +1,5 @@
 {
-  "name": "barcelove-client",
+  "name": "pink_buda_frontend",
   "proxy": "https://barcelove.azurewebsites.net/",
   "version": "0.1.0",
   "dependencies": {
