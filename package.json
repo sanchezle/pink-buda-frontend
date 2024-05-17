@@ -1,6 +1,6 @@
 {
   "name": "pink_buda_frontend",
-  "proxy": "https://barcelove.azurewebsites.net/",
+  "proxy": "http://localhost:3000",
   "version": "0.1.0",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.2",
