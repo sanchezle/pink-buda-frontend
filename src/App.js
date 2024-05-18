@@ -20,7 +20,7 @@ import ResetPassword from './features/auth/ResetPassword';
 import PasswordResetRequest from './features/auth/PasswordResetRequest';
 import EmailConfirmed from './features/users/EmailConfirmed';
 function App() {
-  useTitle('Barcelove')
+  useTitle('Pink Buda Burger')
 
   return (
     <Routes>
