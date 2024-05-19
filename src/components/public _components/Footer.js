@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import { FaBars, FaTimes } from 'react-icons/fa'
+
 
 
 const Footer = () => {

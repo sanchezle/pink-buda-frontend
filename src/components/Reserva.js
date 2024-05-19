@@ -1,6 +1,5 @@
 import React from 'react';
 import './formStyle.css';
-import Restaurante from './Restaurante';
 
 const Reserva = () => {
     return (
