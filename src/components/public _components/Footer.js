@@ -12,14 +12,22 @@ const Footer = () => {
                     <li>Delivery</li>
                     <li>Contacto</li>
                 </ul>
-                <div className='social'>
-                    <a href='https://www.facebook.com/'><i className='fab fa-facebook-f'></i></a>
-                    <a href='https://www.instagram.com/pinkbudaburgerbar'><i className='fab fa-instagram'></i></a>
-                    <a href='https://www.twitter.com/'><i className='fab fa-twitter'></i></a>
+                <div className="social-icons">
+                    <a href="https://www.instagram.com/pinkbudaburger/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-instagram" style={{color: 'darkgrey'}}></i>
+                    </a>
+
+                    <a href="https://wa.me/+34664050394" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-whatsapp" style={{color: 'darkgrey'}}></i>
+                    </a>
+                    <a href="mailto:sanchezle21@gmail.com" aria-label="Email" class="email-link">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+
                 </div>
                 <div className='bottom'>
                     <span className='line'></span>
-                    <p>2024 PinK Buda Burger, all rights reserved</p>
+                    <p>© 2021 Pink Buda Burger. All rights reserved</p>
                 </div>
             </div>
         </div>

@@ -1,0 +1,35 @@
+h1{
+    color: black;
+}
+.delivery {
+    position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1240px;
+    height: 400px; 
+}
+.delivery .container {
+    max-width: 1240px;
+    position: center;
+    right:-50px;
+}
+.delivery-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.delivery-logo img {
+    width: 200px;  /* adjust as needed */
+    height: auto;
+    cursor: pointer;
+}

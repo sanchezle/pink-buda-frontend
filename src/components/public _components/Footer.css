@@ -37,3 +37,19 @@
 .line {
     margin-bottom: 1rem;
 }
+.footer .social-icons a i {
+    font-size: 40px; /* Adjust this value to increase or decrease the icon size */
+}
+
+.footer.social-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem; /* Adjust as needed */
+    font-size: 40px;
+}
+
+.footer.social-icons a {
+    color: rgb(169, 169, 169); /* Icon color */
+    margin-right: 1rem;
+    width: 80px;
+}

@@ -6,6 +6,7 @@ import { useLoginMutation } from './authApiSlice'
 import usePersist from '../../hooks/usePersist'
 import useTitle from '../../hooks/useTitle'
 import PulseLoader from 'react-spinners/PulseLoader'
+import '../../components/formStyle.css'
 
 const Login = () => {
     useTitle('Employee Login')

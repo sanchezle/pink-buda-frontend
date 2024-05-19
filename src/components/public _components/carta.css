@@ -1,5 +1,6 @@
 .productos {
     width: 100%;
+    color:black
 }
 
 .productos .container {
@@ -69,7 +70,7 @@
 }
 
 .productos .productos-card p {
-    color: white; /* Adjust color for visibility on new background */
+    color: rgb(255, 249, 249); /* Adjust color for visibility on new background */
     font-size: 1.1rem;
     margin: 12px 0;
 }

@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { usePasswordResetRequestMutation } from './authApiSlice';
 import { setResetPasswordEmail } from './authSlice'; // Ensure this action is correctly imported
-
+import '../../components/formStyle.css'
 const PasswordResetRequest = () => {
     const [email, setEmail] = useState('');
     const [passwordResetRequest] = usePasswordResetRequestMutation();
