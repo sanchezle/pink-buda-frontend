@@ -1,0 +1,85 @@
+.productos {
+    width: 100%;
+}
+
+.productos .container {
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0;
+    background-color: white;
+}
+
+.productos h2 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.productos .container .content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin: 4rem 0;
+}
+
+.productos .productos-card {
+    display: grid;
+    grid-template-areas: "image image"
+                         "image image"
+                         "image image"
+                         "description description";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgb(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    overflow: hidden;
+    height: 500px; /* Adjust height as needed */
+}
+
+.productos .productos-card-content {
+    grid-area: description;
+    bottom: 0;
+    background: rgb(27, 27, 27);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+}
+
+.productos .productos-card-image {
+    overflow: hidden;
+    grid-area: 1/1/4/5;
+}
+
+.productos .productos-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productos .productos-card:hover {
+    transform: translateY(-5px);
+}
+
+.productos .productos-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 0; /* Adjust as needed */
+}
+
+.productos .productos-card p {
+    color: white; /* Adjust color for visibility on new background */
+    font-size: 1.1rem;
+    margin: 12px 0;
+}
+
+@media screen and (max-width: 940px) {
+    .productos .container {
+        width: 100%;
+    }
+
+    .productos .container .content {
+        grid-template-columns: 1fr;
+    }
+}

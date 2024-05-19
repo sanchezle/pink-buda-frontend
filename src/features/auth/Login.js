@@ -109,6 +109,12 @@ const Login = () => {
             <footer>
                 <Link to="/">Back to Home</Link>
             </footer>
+            <footer>
+                <Link to="/register">Register</Link>
+            </footer>
+            <footer>
+                <Link to="/PasswordResetRequest">Forgot Password?</Link>
+            </footer>
         </section>
     )
 

@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/static/css/main.58eecbf7.css",
+    "main.js": "/static/js/main.cc5bd1f4.js",
+    "static/media/video-cover.mp4": "/static/media/video-cover.8b5a72b740e65a0600e7.mp4",
+    "static/media/polloburg1.png": "/static/media/polloburg1.a8fdb852bdc97e2feb42.png",
+    "static/media/chispa.png": "/static/media/chispa.de8252958fbaae986398.png",
+    "static/media/Asmashada1.png": "/static/media/Asmashada1.f172a8b46e94a1c7a369.png",
+    "static/media/logonav.png": "/static/media/logonav.663313bc6202b44ff49f.png",
+    "index.html": "/index.html",
+    "main.58eecbf7.css.map": "/static/css/main.58eecbf7.css.map",
+    "main.cc5bd1f4.js.map": "/static/js/main.cc5bd1f4.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58eecbf7.css",
+    "static/js/main.cc5bd1f4.js"
+  ]
+}

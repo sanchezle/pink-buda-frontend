@@ -13,9 +13,8 @@ html {
 }
 
 body {
-    min-height: 100vh;
-    background-color: dodgerblue;
-}
+    background-color: red;
+  }
 
 .App {
   display: flex;
