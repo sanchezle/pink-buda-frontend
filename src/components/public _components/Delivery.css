@@ -2,6 +2,9 @@ h1{
     color: black;
 }
 .delivery {
+    margin: 4rem auto;
+    padding: 4rem 0;
+
     position: center;
     display: flex;
     flex-direction: column;

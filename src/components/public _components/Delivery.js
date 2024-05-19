@@ -8,7 +8,7 @@ const Delivery = () => {
     return (
         <div className='delivery'>
             <div className='container'>
-                <h1>Delivery</h1>
+
         
 
                     { /* logo of glovo, just eat, uber eats  on click take to url*/}

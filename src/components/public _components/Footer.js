@@ -1,5 +1,7 @@
 import React from 'react'
 import './Footer.css'
+import { FaBars, FaTimes } from 'react-icons/fa'
+
 
 const Footer = () => {
     return (
@@ -13,12 +15,12 @@ const Footer = () => {
                     <li>Contacto</li>
                 </ul>
                 <div className="social-icons">
-                    <a href="https://www.instagram.com/pinkbudaburger/" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-instagram" style={{color: 'darkgrey'}}></i>
+                    <a href="https://www.instagram.com/pinkbudaburgerbar/" target="_blank" rel="noopener noreferrer">
+                        <i className="fab fa-instagram" ></i>
                     </a>
 
                     <a href="https://wa.me/+34664050394" target="_blank" rel="noopener noreferrer">
-                        <i className="fab fa-whatsapp" style={{color: 'darkgrey'}}></i>
+                        <i className="fab fa-whatsapp" ></i>
                     </a>
                     <a href="mailto:sanchezle21@gmail.com" aria-label="Email" class="email-link">
                         <i class="fas fa-envelope"></i>

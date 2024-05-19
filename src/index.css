@@ -1,7 +1,7 @@
 
 :root {
-  --primary-color: #EB7AA4;
-  --primary-dark: #ff34d3;
+  --primary-color: #EA79A2;
+  --primary-dark: #EA79A2;
   --secondary-color: #fd0782;
   --secondary-dark:#e30258;
   --overlay:rgba(0,0 ,0,.7);
@@ -15,9 +15,8 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  /* Replace with your desired font stack for body text */
+  font-family: "Gotham Book", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.2rem;
