@@ -1,23 +1,19 @@
-import React from 'react'
-import './Public.css'
-import Navbar from './public _components/Navbar'
-import Hero from './public _components/Hero'
-import Footer from './public _components/Footer'
-import Carta from './public _components/Carta'
+import React from 'react';
+import Navbar from './public_components/Navbar';
+import Delivery from './public_components/Delivery';
+import Footer from './public_components/Footer';
+import Carta from './public_components/Carta';
+import './Public.css';
 
-import Delivery from './public _components/Delivery'
-
-
-function Public() {
+const Public = () => {
   return (
-    <div className='Public'>
+    <div className="public">
       <Navbar />
-      <Hero />
-      <Carta />
     
+      <Carta />
       <Delivery />
       <Footer />
-
+    
     </div>
   );
 }

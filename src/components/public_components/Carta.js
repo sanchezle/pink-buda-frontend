@@ -17,7 +17,7 @@ const ProductosCard = ({ producto }) => {
 };
 const Carta = ({ producto }) => {
     return (
-        <div className="productos">
+        <div className="productos" id='carta' >
             <div className="container">
                 <h2> C A R T A</h2>
                 <div className="content">

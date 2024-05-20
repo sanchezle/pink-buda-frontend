@@ -1,0 +1,55 @@
+.footer{
+  margin-top:autho;
+}
+.footer .container {
+  margin: auto;
+  text-align: center;
+  border: 3px solid var(--primary-color);
+
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+.footer li {
+  padding: 1rem;
+}
+
+.footer li a {
+  color: #EA79A2;
+}
+
+.footer li a:hover {
+  padding-bottom: 12px;
+  border-bottom: 3px solid var(--secondary-color);
+}
+
+.bottom {
+  text-align: center;
+  padding-top: 3rem;
+}
+
+.line {
+  margin-bottom: 1rem;
+}
+.footer .social-icons a i {
+  font-size: 40px; /* Adjust this value to increase or decrease the icon size */
+  color:#EA79A2
+}
+
+.footer.social-icons {
+  display: flex;
+  align-items: center;
+  margin-right: 2rem; /* Adjust as needed */
+  font-size: 40px;
+}
+
+.footer .social-icons a {
+  color:#EA79A2 ; /* Icon color */
+  margin-right: 1rem;
+  width: 80px;
+  padding: 10px;
+  border: 2px solid black;
+}

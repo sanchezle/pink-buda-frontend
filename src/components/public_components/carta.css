@@ -1,13 +1,15 @@
 .productos {
     width: 100%;
-    color:black
+    color: var(--primary-color);
+    background-color: black;
+    border: 3px solid var(--primary-color);
 }
 
 .productos .container {
-    width: 1240px;
+
     margin: 4rem auto;
     padding: 4rem 0;
-    background-color: white;
+
 }
 
 .productos h2 {
@@ -44,7 +46,7 @@
     bottom: 0;
     background: rgb(27, 27, 27);
     color: white;
-    width: 100%;
+
     padding: 1rem;
 }
 
