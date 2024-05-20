@@ -14,10 +14,8 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
+
+
   margin: 0;
   /* Replace with your desired font stack for body text */
   font-family: "Gotham Book", Arial, sans-serif;
