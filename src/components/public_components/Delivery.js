@@ -6,7 +6,7 @@ import logoUberEats from "./images/Uber_eats_logo.svg";
 
 const Delivery = () => {
   return (
-    <div className='delivery'>
+    <div className='delivery'id='delivery'>
       <div className='container'>
         <h2>Ordena ahora y recibe tu pedido en casa</h2>
         <div className='delivery-logo'>

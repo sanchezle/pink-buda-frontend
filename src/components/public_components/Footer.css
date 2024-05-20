@@ -1,10 +1,14 @@
 .footer{
-  margin-top:autho;
+    display: grid;
+    grid-template-columns: 1fr ;
+    margin-top:auto;
+    border: 3px solid var(--primary-color);
+    gap:10px;
 }
 .footer .container {
   margin: auto;
   text-align: center;
-  border: 3px solid var(--primary-color);
+  
 
 }
 
@@ -51,5 +55,5 @@
   margin-right: 1rem;
   width: 80px;
   padding: 10px;
-  border: 2px solid black;
+
 }

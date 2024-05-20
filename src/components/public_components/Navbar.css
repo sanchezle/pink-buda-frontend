@@ -1,8 +1,9 @@
 header {
-  
   position: fixed;
   height: 120px;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
   top: 0;
   left: 0;
   z-index: 1;
@@ -16,7 +17,6 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   margin: auto;
   height: 100%;
   padding: 0 1rem;
@@ -28,10 +28,10 @@ header {
 }
 
 .header .navbar img {
-  max-width: 100px; /* or 100% if you want it to be responsive */
-  max-height: 100px; /* This will ensure the logo never exceeds the navbar's height */
-  height: auto; /* This will maintain the aspect ratio */
-  width: auto; /* This will maintain the aspect ratio */
+  max-width: 100px;
+  max-height: 100px;
+  height: auto;
+  width: auto;
 }
 
 .header .nav-menu {
@@ -52,43 +52,49 @@ header {
   display: none;
 }
 
-
-@media screen and (max-width:940px) {
+@media screen and (max-width: 940px) {
   .header {
-      max-width: 100%;
-      background-color: rgba(0,0,0,.9);
+    max-width: 100%;
+    background-color: rgba(0, 0, 0, .9);
   }
 
   .header .navbar {
-      max-width: 100%;
+    max-width: 100%;
   }
 
   .hamburger {
-      display: block;
+    display: block;
+    color: white;
   }
 
   .nav-menu {
-      position: fixed;
-      left: -100%;
-      top: 90px;
-      flex-direction: column;
-      background-color: rgba(0,0,0,.9);
-      width: 100%;
-      height: 90vh;
-      z-index: 999;
-      text-align: center;
-      transition: .3s;
+    position: fixed;
+    top: -100%; /* Initially positioned above the viewport */
+    left: 0;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .9);
+    width: 100%;
+    height: 100vh;
+    z-index: 999;
+    text-align: center;
+    transition: .3s;
   }
 
   .nav-menu.active {
-      left: 0;
+    top: 0; /* Slide down into view */
   }
 
   .nav-item {
-      margin: 1.5rem 0;
+    margin: 1.5rem 0;
   }
 
   .header .navbar img {
-      width: 150px;
+    width: 150px;
   }
+}
+
+/* Style for hamburger icons */
+.hamburger .fa-bars,
+.hamburger .fa-times {
+  color: var(--primary-color) /* Change this to the desired color */
 }
