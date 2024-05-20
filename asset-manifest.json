@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.c55017bd.css",
-    "main.js": "/static/js/main.8deb5d15.js",
-    "static/media/video-cover.mp4": "/static/media/video-cover.8b5a72b740e65a0600e7.mp4",
+    "main.css": "/static/css/main.84b2c1f5.css",
+    "main.js": "/static/js/main.90cec3d0.js",
     "static/media/polloburg1.png": "/static/media/polloburg1.a8fdb852bdc97e2feb42.png",
     "static/media/chispa.png": "/static/media/chispa.de8252958fbaae986398.png",
     "static/media/Asmashada1.png": "/static/media/Asmashada1.f172a8b46e94a1c7a369.png",
     "static/media/logo_just_eat.png": "/static/media/logo_just_eat.8e5be52e0fe48f50c5cd.png",
     "static/media/Glovo_logo.png": "/static/media/Glovo_logo.6e8cb823c21422bb22bc.png",
-    "static/media/Uber_eats_logo.png": "/static/media/Uber_eats_logo.aebc0c275c00f1ab7696.png",
     "static/media/logonav.png": "/static/media/logonav.663313bc6202b44ff49f.png",
+    "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
-    "main.c55017bd.css.map": "/static/css/main.c55017bd.css.map",
-    "main.8deb5d15.js.map": "/static/js/main.8deb5d15.js.map"
+    "main.84b2c1f5.css.map": "/static/css/main.84b2c1f5.css.map",
+    "main.90cec3d0.js.map": "/static/js/main.90cec3d0.js.map"
   },
   "entrypoints": [
-    "static/css/main.c55017bd.css",
-    "static/js/main.8deb5d15.js"
+    "static/css/main.84b2c1f5.css",
+    "static/js/main.90cec3d0.js"
   ]
 }
