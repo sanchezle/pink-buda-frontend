@@ -1,0 +1,24 @@
+.slideshow-container {
+    
+
+
+  }
+  
+  .slideshow-wrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 98%;
+
+
+    
+  }
+  
+  .slide {
+    box-sizing: border-box;
+  }
+  
+  .slide img {
+  
+    display: block;
+  }
+  

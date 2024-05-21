@@ -36,6 +36,20 @@ header {
 
 .header .nav-menu {
   display: flex;
+  flex-direction: column; /* Adjust for mobile first */
+  position: fixed;
+  top: -100%; /* Initially positioned above the viewport */
+  left: 0;
+  background-color: rgba(0, 0, 0, .9);
+  width: 100%;
+  height: 100vh;
+  z-index: 999;
+  text-align: center;
+  transition: .3s;
+}
+
+.header .nav-menu.active {
+  top: 0; /* Slide down into view */
 }
 
 .header .nav-item {
@@ -49,10 +63,12 @@ header {
 }
 
 .hamburger {
-  display: none;
+  display: block;
+  color: white;
+  z-index: 1000; /* Ensure the hamburger icon is above the menu */
 }
 
-@media screen and (max-width: 940px) {
+@media screen and (min-width: 940px) {
   .header {
     max-width: 100%;
     background-color: rgba(0, 0, 0, .9);
@@ -62,26 +78,17 @@ header {
     max-width: 100%;
   }
 
-  .hamburger {
-    display: block;
-    color: white;
-  }
-
   .nav-menu {
-    position: fixed;
-    top: -100%; /* Initially positioned above the viewport */
-    left: 0;
-    flex-direction: column;
-    background-color: rgba(0, 0, 0, .9);
-    width: 100%;
-    height: 100vh;
-    z-index: 999;
-    text-align: center;
-    transition: .3s;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    height: auto;
+    display: flex; /* Display flex for desktop */
   }
 
   .nav-menu.active {
-    top: 0; /* Slide down into view */
+    top: 0;
   }
 
   .nav-item {
@@ -96,5 +103,5 @@ header {
 /* Style for hamburger icons */
 .hamburger .fa-bars,
 .hamburger .fa-times {
-  color: var(--primary-color) /* Change this to the desired color */
+  color: var(--primary-color); /* Change this to the desired color */
 }

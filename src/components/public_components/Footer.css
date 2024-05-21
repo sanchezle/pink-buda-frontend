@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: 1fr ;
     margin-top:auto;
-    border: 3px solid var(--primary-color);
+
     gap:10px;
 }
 .footer .container {
