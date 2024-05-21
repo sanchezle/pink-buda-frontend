@@ -2,7 +2,8 @@
     width: 100%;
     color: var(--primary-color);
     background-color: black;
-    border: 3px solid var(--primary-color);
+
+    flex-shrink: 3;
 }
 
 .productos .container {

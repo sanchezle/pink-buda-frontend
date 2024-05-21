@@ -1,8 +1,8 @@
 .delivery {
   
-  background-color: black;
+  
 
-  border-radius: 10px;
+
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   
 
@@ -11,46 +11,38 @@
 }
 
 .delivery .container {
-  border: 3px solid red;
-  position: center;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  position: center;
-  flex-wrap: wrap;
-
-  justify-content: space-around;
+  align-content: center;
   border-color: var(--primary-color);
 }
 .delivery-logo {
-  flex-wrap: wrap;
+ 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
   margin: 4rem auto; 
   top: 20px;
   width: 70%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
-  
-  justify-items: center;
-  align-items: center;
-  margin-bottom: 20px;
+
   
 
 
 }
 
 .delivery-logo img {
-  flex-wrap: wrap;
 
-  justify-content: space-around;
-  width: 16vh;  /* adjust as needed */
+
+  max-width: 16vh;  /* adjust as needed */
   height: auto;
   cursor: pointer;
 
 }
 #title {
+  display: flex;
   left: 50%;
   font: size 1px;
   text-align: center;
@@ -64,13 +56,18 @@
   color: #EA79A2;
   margin-bottom: 20px;
 } 
-#uberlogo{
-  height: 120px;
-  width: 120px;
 
+#uberlogo{
+  height: auto;
+  width: 200px;
+  
 }
 #glovologo{
+
   height: auto;
   width: 200px;
 }
-
+#justeatlogo{
+  
+  width: 350px;
+}

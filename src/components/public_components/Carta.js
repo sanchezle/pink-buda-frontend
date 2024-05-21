@@ -19,7 +19,7 @@ const Carta = ({ producto }) => {
     return (
         <div className="productos" id='carta' >
             <div className="container">
-                <h2> C A R T A</h2>
+                <h2> Menú</h2>
                 <div className="content">
                     {productos.map(producto => <ProductosCard key={producto.id} producto={producto} />)}
                 </div>
