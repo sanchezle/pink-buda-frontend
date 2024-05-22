@@ -3,8 +3,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from './images/logonav.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
-import Button from './Button';
-import locationPin from './images/location-pin.png';
+
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -17,8 +16,6 @@ const Navbar = () => {
         <a href='/' className='logo'>
           <img src={logo} alt='logo' />
         </a>
-
-        <Button />
 
         <div className='hamburger' onClick={handleClick}>
           {click ? (
@@ -47,4 +44,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-

@@ -8,7 +8,7 @@ const Delivery = () => {
   return (
     <div className='delivery'id='delivery'>
       <div className='container'>
-        <h2>Haz tu pedido</h2>
+        <h1> HAZ TU PEDIDO</h1>
         <div className='delivery-logo'>
           <img id="glovologo" src={logoGlovo} alt='glovo' onClick={() => window.location.href = 'https://glovoapp.com/es/en/barcelona/pink-buda-burger-barcelona/'}/>
           <img id="justeatlogo" src={logoJustEat} alt='just-eat' onClick={() => window.location.href = 'https://www.just-eat.es/restaurants-pink-buda-burger-barcelona/menu'}/>

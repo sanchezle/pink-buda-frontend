@@ -12,14 +12,16 @@ const Locations = () => {
   return (
     <div className="locations">
       <div>
-      <h1>Estamos en </h1>
+      <h1>UBICACIONES</h1>
       </div>
       <div className='content'>
-        <div className='addresses'>
+        <div className='addresses2'>
            
-            <ul>
+            <ul className='addresses'>
               {restaurants.map((restaurant, index) => (
                 <li key={index}>{restaurant.name}</li>
+        
+
               ))}
             </ul>
         </div>

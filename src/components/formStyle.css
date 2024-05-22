@@ -8,22 +8,15 @@
 
 html {
     font-family: 'Gotham Book', Arial, sans-serif;
-    font-size: 22px;
-    color: #FEFEFE;
+
+    color: var(--primary-color);
+    font-weight: 1000 
 }
 
 body {
-    background-color: black;
+    
   }
 
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
-  padding: 1rem 0.5rem;
-}
 
 .reserva .container {
     margin: 4rem auto;

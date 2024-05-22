@@ -1,20 +1,35 @@
+
+
 .footer{
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr  ;
     margin-top:auto;
 
-    gap:10px;
+    border: 1px solid #EA79A2;
 }
 .footer .container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
   text-align: center;
-  
+
 
 }
-
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+ 
+  
+}
 .footer ul {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  color : var(--primary-color);
+  font-weight: 1000;
+  font-size: 2rem;
+  
+
 }
 
 .footer li {
@@ -22,38 +37,54 @@
 }
 
 .footer li a {
-  color: #EA79A2;
+  font-size: 5rem; 
+
+  border: black;
 }
 
 .footer li a:hover {
   padding-bottom: 12px;
-  border-bottom: 3px solid var(--secondary-color);
+
 }
 
 .bottom {
   text-align: center;
-  padding-top: 3rem;
+  padding-top: 1rem;
+
+  color: white;
 }
 
 .line {
   margin-bottom: 1rem;
 }
+.social-icons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
 .footer .social-icons a i {
+  display: flex;
+  flex-direction: column;
   font-size: 60px; /* Adjust this value to increase or decrease the icon size */
-  color:#EA79A2
+  color:var(--primary-color); 
+  
 }
 
 .footer.social-icons {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-right: 2rem; /* Adjust as needed */
   font-size: 40px;
+
 }
 
 .footer .social-icons a {
-  color:#EA79A2 ; /* Icon color */
+ /* Icon color */
   margin-right: 1rem;
   width: 80px;
   padding: 10px;
+  
 
 }

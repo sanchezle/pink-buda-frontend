@@ -1,107 +1,94 @@
-header {
-  position: fixed;
-  height: 120px;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-  top: 0;
-  left: 0;
-  z-index: 1;
-  transition: .3s ease-in;
-  overflow: hidden;
-  background-color: red;
+.header {
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .3s ease-in;
+    overflow: hidden;
+    background-color: rgba(0,0,0,.9);
+    
 }
 
 .header .navbar {
-  border: 3px solid var(--primary-color);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-  height: 100%;
-  padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin: auto;
+    height: 100%;
+    padding: 0 1rem;
 }
 
 .header .nav-menu a {
-  color: #EA79A2;
-  font-weight: 1000;
+    color: var(--primary-color);
+    font-size: 1.5rem;
 }
 
 .header .navbar img {
-  max-width: 100px;
-  max-height: 100px;
-  height: auto;
-  width: auto;
+    width: 100px;
+    height: 100%;
 }
 
 .header .nav-menu {
-  display: flex;
-  flex-direction: column; /* Adjust for mobile first */
-  position: fixed;
-  top: -100%; /* Initially positioned above the viewport */
-  left: 0;
-  background-color: rgba(0, 0, 0, .9);
-  width: 100%;
-  height: 100vh;
-  z-index: 999;
-  text-align: center;
-  transition: .3s;
-}
-
-.header .nav-menu.active {
-  top: 0; /* Slide down into view */
+    display: flex;
 }
 
 .header .nav-item {
-  padding: 1rem;
-  font-weight: 500;
+    padding: 1rem;
+    font-weight: 500;
 }
 
 .header .nav-item a:hover {
-  padding-bottom: 12px;
-  border-bottom: 3px solid var(--secondary-color);
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
 .hamburger {
-  display: block;
-  color: white;
-  z-index: 1000; /* Ensure the hamburger icon is above the menu */
+    display: none;
+    color: var(--primary-color);
 }
 
-@media screen and (min-width: 940px) {
-  .header {
-    max-width: 100%;
-    background-color: rgba(0, 0, 0, .9);
-  }
 
-  .header .navbar {
-    max-width: 100%;
-  }
 
-  .nav-menu {
-    flex-direction: row;
-    position: static;
-    background-color: transparent;
-    width: auto;
-    height: auto;
-    display: flex; /* Display flex for desktop */
-  }
 
-  .nav-menu.active {
-    top: 0;
-  }
+@media screen and (max-width:940px) {
+    .header {
+        max-width: 100%;
+        background-color: rgba(0,0,0,.9);
+    }
 
-  .nav-item {
-    margin: 1.5rem 0;
-  }
+    .header .navbar {
+        max-width: 100%;
+    }
 
-  .header .navbar img {
-    width: 150px;
-  }
-}
+    .hamburger {
+        display: block;
+    }
 
-/* Style for hamburger icons */
-.hamburger .fa-bars,
-.hamburger .fa-times {
-  color: var(--primary-color); /* Change this to the desired color */
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 90px;
+        flex-direction: column;
+        background-color: rgba(0,0,0,.9);
+        width: 100%;
+        height: 90vh;
+        z-index: 999;
+        text-align: center;
+        transition: .3s;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 1.5rem 0;
+    }
+
+    .header .navbar img {
+        width: 150px;
+    }
 }
