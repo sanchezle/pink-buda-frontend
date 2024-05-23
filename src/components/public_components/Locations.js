@@ -2,9 +2,8 @@ import React from 'react';
 import RestaurantMap from './RestaurantMap';
 import './Locations.css';
 import Pin from './images/location-pin.png'
-import minipin from './images/location-pin-mini.png'
 import './images/location-pin.png'
-import Link from 'react-router-dom';
+
 
 const Locations = () => {
   const restaurants = [
