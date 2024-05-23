@@ -28,7 +28,7 @@ function App() {
       <Route path="/">
         {/* public routes */}
         <Route index element={<Public />} />
-        <Route path="Menu" element={<Menu />} />
+        <Route path="menu" element={<Menu />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />}/>
         <Route path="passwordResetRequest" element={<PasswordResetRequest/>}/>
