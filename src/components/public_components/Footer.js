@@ -1,6 +1,7 @@
 import React from 'react'
 import './Footer.css'
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
 const Footer = () => {
     return (
@@ -9,7 +10,7 @@ const Footer = () => {
                     <div className='footer-content'>
                     <ul>
                      
-                        <li>Menu</li>
+                        <li href='/Menu'>Menu</li>
                         <li>Reserva</li>
                         <li>Delivery</li>
                         <li>Contacto</li>
@@ -21,8 +22,8 @@ const Footer = () => {
                             <i className="fab fa-instagram" ></i>
                         </a>
 
-                        <a href="https://wa.me/+" target="_blank" rel="noopener noreferrer">
-                            <i className="fa fa-phone" ></i>
+                        <a href="tel:0034 931 97 41 03" onClick={(event) => event.preventDefault()}>
+                           < FontAwesomeIcon icon={faPhone}style={{ fontSize: '50px',}}/>
                         </a>
                         <a href="mailto:pinkbuda@gmail.com" aria-label="Email" class="email-link">
                             <i class="fas fa-envelope"></i>

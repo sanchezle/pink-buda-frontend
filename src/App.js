@@ -19,6 +19,7 @@ import Register from './features/users/Register'
 import ResetPassword from './features/auth/ResetPassword';
 import PasswordResetRequest from './features/auth/PasswordResetRequest';
 import EmailConfirmed from './features/users/EmailConfirmed';
+import Menu from './components/public_components/Menu';
 function App() {
   useTitle('Pink Buda Burger')
 
@@ -27,6 +28,7 @@ function App() {
       <Route path="/">
         {/* public routes */}
         <Route index element={<Public />} />
+        <Route path="Menu" element={<Menu />} />
         <Route path="login" element={<Login />} />
         <Route path="register" element={<Register />}/>
         <Route path="passwordResetRequest" element={<PasswordResetRequest/>}/>

@@ -1,26 +1,29 @@
 {
   "files": {
-    "main.css": "/static/css/main.fff81398.css",
-    "main.js": "/static/js/main.3bfe2f09.js",
-    "static/media/polloburg1.png": "/static/media/polloburg1.a8fdb852bdc97e2feb42.png",
+    "main.css": "/static/css/main.21f2a470.css",
+    "main.js": "/static/js/main.0667a8e3.js",
     "static/media/image4.png": "/static/media/image4.0991f18c46501b3472d8.png",
     "static/media/image5.png": "/static/media/image5.0991f18c46501b3472d8.png",
     "static/media/chispa.png": "/static/media/chispa.de8252958fbaae986398.png",
     "static/media/image7.png": "/static/media/image7.151c4c96de2f047e23ab.png",
     "static/media/image6.png": "/static/media/image6.9c3ae3e7b3c27d50ffba.png",
-    "static/media/image8.png": "/static/media/image8.ca4b8ff2b83f611a7c57.png",
     "static/media/Asmashada1.png": "/static/media/Asmashada1.f172a8b46e94a1c7a369.png",
+    "static/media/menu-catala22.jpg": "/static/media/menu-catala22.3efe1f24d890fb2465fe.jpg",
+    "static/media/menu-es2.jpg": "/static/media/menu-es2.d61434235c8a8214bbe8.jpg",
+    "static/media/menu-english222.jpg": "/static/media/menu-english222.81f7da633e7ac974cdc4.jpg",
+    "static/media/menu-catala12.jpg": "/static/media/menu-catala12.c8b166de50474e1a106f.jpg",
+    "static/media/menu-english12.jpg": "/static/media/menu-english12.a0a6d5e4b1f415ee7728.jpg",
+    "static/media/menu-es1.jpg": "/static/media/menu-es1.eaefb6e2e5813b16ea28.jpg",
     "static/media/logo_just_eat.png": "/static/media/logo_just_eat.8e5be52e0fe48f50c5cd.png",
-    "static/media/location-pin.png": "/static/media/location-pin.5139d4cb6f61602b8c38.png",
     "static/media/Glovo_logo.png": "/static/media/Glovo_logo.0a09b9d0679a85a45527.png",
     "static/media/logonav.png": "/static/media/logonav.663313bc6202b44ff49f.png",
     "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
-    "main.fff81398.css.map": "/static/css/main.fff81398.css.map",
-    "main.3bfe2f09.js.map": "/static/js/main.3bfe2f09.js.map"
+    "main.21f2a470.css.map": "/static/css/main.21f2a470.css.map",
+    "main.0667a8e3.js.map": "/static/js/main.0667a8e3.js.map"
   },
   "entrypoints": [
-    "static/css/main.fff81398.css",
-    "static/js/main.3bfe2f09.js"
+    "static/css/main.21f2a470.css",
+    "static/js/main.0667a8e3.js"
   ]
 }

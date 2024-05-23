@@ -6,7 +6,7 @@ const RestaurantMap = ({ restaurants }) => {
 
   const { isLoaded } = useJsApiLoader({
     id: 'google-map-script',
-    googleMapsApiKey: 'YOUR_API_KEY',
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
     version: 'beta',
   });
 
@@ -15,7 +15,7 @@ const RestaurantMap = ({ restaurants }) => {
       const map = new window.google.maps.Map(mapRef.current, {
         center: { lat: 41.4036, lng: 2.1744 },
         zoom: 12,
-        mapId: 'YOUR_MAP_ID', // Add this line
+        mapId: process.env.MAP_ID, // Add this line
       });
 
       restaurants.forEach(restaurant => {

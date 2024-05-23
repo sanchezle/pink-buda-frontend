@@ -4,6 +4,7 @@ import Delivery from './public_components/Delivery';
 import Footer from './public_components/Footer';
 import Slideshow from './public_components/Slideshow';
 import Locations from './public_components/Locations';
+import Menu from './public_components/Menu';
 
 import './Public.css';
 
