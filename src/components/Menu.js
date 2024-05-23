@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 
-import es1 from './images/menu/menu-es1.jpg';
-import es2 from './images/menu/menu-es2.jpg';
-import en1 from './images/menu/menu-english12.jpg';
-import en2 from './images/menu/menu-english222.jpg';
-import cat1 from './images/menu/menu-catala12.jpg';
-import cat2 from './images/menu/menu-catala22.jpg';
+import es1 from './menu/menu-es1.jpg';
+import es2 from './menu/menu-es2.jpg';
+import en1 from './menu/menu-english12.jpg';
+import en2 from './menu/menu-english222.jpg';
+import cat1 from './menu/menu-catala12.jpg';
+import cat2 from './menu/menu-catala22.jpg';
 
 const menuCatalan = [cat1, cat2];
 const menuEnglish = [en1, en2];

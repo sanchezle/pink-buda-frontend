@@ -19,7 +19,7 @@ import Register from './features/users/Register'
 import ResetPassword from './features/auth/ResetPassword';
 import PasswordResetRequest from './features/auth/PasswordResetRequest';
 import EmailConfirmed from './features/users/EmailConfirmed';
-import Menu from './components/public_components/Menu';
+import Menu from './components/Menu';
 function App() {
   useTitle('Pink Buda Burger')
 
