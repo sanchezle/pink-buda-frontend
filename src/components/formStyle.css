@@ -47,7 +47,8 @@ form {
 }
 
 a, a:visited {
-    color: #fff;
+    color: var(--primary-color);
+    
 }
 
 input[type="text"],

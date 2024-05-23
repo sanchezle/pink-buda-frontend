@@ -14,7 +14,7 @@ box-sizing: border-box;
 .public {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
   padding: 10px;
 }
 body {

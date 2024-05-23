@@ -10,7 +10,7 @@ const Locations = () => {
   ];
 
   return (
-    <div className="locations">
+    <div className="locations" id="locations">
       <div>
       <h1>UBICACIONES</h1>
       </div>

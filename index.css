@@ -14,7 +14,7 @@ box-sizing: border-box;
 .public {
   display: flex;
   flex-direction: column;
-  gap: 6rem;
+  gap: 2rem;
   padding: 10px;
 }
 body {
@@ -74,6 +74,7 @@ a {
   margin: 5px auto;
   background-color: var(--primary-color);
 }
+
 
 
 

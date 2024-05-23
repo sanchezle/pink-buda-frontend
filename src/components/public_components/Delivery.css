@@ -7,6 +7,9 @@
 
 
   color: var(--primary-color);
+  border: 3px solid var(--primary-color);
+  border-radius: 20px;
+
 }
 
 .delivery .container {
@@ -59,17 +62,17 @@
 } 
 
 #uberlogo{
-  max-width:16%;
+  max-width: 14%;
   height: auto;
   
 }
 #glovologo{
 
-  max-width:16%;
+  max-width:14%;
   height: auto;
 }
 #justeatlogo{
   
-  max-width: 16%;
+  max-width: 14%;
   height: auto;
 }

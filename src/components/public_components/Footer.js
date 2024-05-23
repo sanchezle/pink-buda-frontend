@@ -8,12 +8,13 @@ const Footer = () => {
         <div className='footer'>
             <div className='container'>
                     <div className='footer-content'>
-                    <ul>
+                    <ul className='links-footer'>
                      
-                        <li href='/Menu'>Menu</li>
-                        <li>Reserva</li>
-                        <li>Delivery</li>
-                        <li>Contacto</li>
+                        <li ><a href='/Menu'>Menu</a></li>
+                        <li><a href='/Reserva'>Reserva</a></li>
+                        <li><a href='#locations'>Ubicaciones</a></li>
+                        <li><a href='#delivery'>Delivery</a></li>
+                        
                     </ul>
 
 

@@ -5,7 +5,8 @@
     grid-template-columns: 1fr  ;
     margin-top:auto;
 
-    border: 1px solid #EA79A2;
+    border: 3px solid #EA79A2;
+    border-radius: 20px;
 }
 .footer .container {
   display: flex;
@@ -87,4 +88,11 @@
   padding: 10px;
   
 
+}
+.footer .container .footer-content .links-footer li a {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: 1000;
+  text-decoration: none;
+  padding: 1rem;
 }
