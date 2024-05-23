@@ -1,6 +1,7 @@
 import React from 'react';
 import RestaurantMap from './RestaurantMap';
 import './Locations.css';
+import Pin from './images/location-pin.png'
 
 const Locations = () => {
   const restaurants = [
@@ -15,20 +16,22 @@ const Locations = () => {
       <h1>UBICACIONES</h1>
       </div>
       <div className='content'>
-        <div className='addresses2'>
-           
-            <ul className='addresses'>
-              {restaurants.map((restaurant, index) => (
-                <li key={index}>{restaurant.name}</li>
-        
+        <img src={Pin} alt='location pin' className='pin'/>
 
-              ))}
-            </ul>
-        </div>
         <div className='map'>
         <RestaurantMap restaurants={restaurants} />
         </div>
       </div>
+      <div className='addresses2'>
+           
+           <ul className='addresses'>
+             {restaurants.map((restaurant, index) => (
+               <li key={index}>{restaurant.name}</li>
+       
+
+             ))}
+           </ul>
+       </div>
     </div>
   );
 };

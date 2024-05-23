@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9492cc74.css",
-    "main.js": "/static/js/main.f6f983fc.js",
+    "main.css": "/static/css/main.7fc5c245.css",
+    "main.js": "/static/js/main.6744b2c4.js",
     "static/media/image1.png": "/static/media/image1.a756e464228dbd0637fe.png",
     "static/media/image2.png": "/static/media/image2.a756e464228dbd0637fe.png",
     "static/media/image4.png": "/static/media/image4.40505fe9a11a22cbf3ed.png",
@@ -15,15 +15,16 @@
     "static/media/menu-english12.jpg": "/static/media/menu-english12.a0a6d5e4b1f415ee7728.jpg",
     "static/media/menu-es1.jpg": "/static/media/menu-es1.eaefb6e2e5813b16ea28.jpg",
     "static/media/logo_just_eat.png": "/static/media/logo_just_eat.8e5be52e0fe48f50c5cd.png",
+    "static/media/location-pin.png": "/static/media/location-pin.034689ec5bf3cd6fde77.png",
     "static/media/Glovo_logo.png": "/static/media/Glovo_logo.0a09b9d0679a85a45527.png",
     "static/media/logonav.png": "/static/media/logonav.663313bc6202b44ff49f.png",
     "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
-    "main.9492cc74.css.map": "/static/css/main.9492cc74.css.map",
-    "main.f6f983fc.js.map": "/static/js/main.f6f983fc.js.map"
+    "main.7fc5c245.css.map": "/static/css/main.7fc5c245.css.map",
+    "main.6744b2c4.js.map": "/static/js/main.6744b2c4.js.map"
   },
   "entrypoints": [
-    "static/css/main.9492cc74.css",
-    "static/js/main.f6f983fc.js"
+    "static/css/main.7fc5c245.css",
+    "static/js/main.6744b2c4.js"
   ]
 }

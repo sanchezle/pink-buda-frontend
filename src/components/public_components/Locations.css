@@ -20,7 +20,7 @@ h1{
 
 .content{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -38,23 +38,31 @@ h1{
 .addresses {
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: row; 
     border-radius: 20px;
     overflow: hidden;
-    min-height: 300px;
-    justify-content: space-around;
+    min-width: 200px;
+    justify-content: space-between;
+    border: 3px solid var(--primary-color);
+
 }
 .map{
     min-width: 200px;
     flex-shrink: 1;
-    width: 40%;
+    width: 98%;
     display: flex;  
     flex-direction: column;
 
     border-radius: 20px;
     overflow: hidden;
+    
 }
 :link{
     text-decoration: none;
     color: var(--primary-color);
+}
+.pin{
+    height: auto;
+    max-width: 25%;
+    margin-bottom: 2rem;
 }
