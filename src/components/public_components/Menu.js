@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './carta.css';
+
 import es1 from './images/menu/menu-es1.jpg';
 import es2 from './images/menu/menu-es2.jpg';
 import en1 from './images/menu/menu-english12.jpg';

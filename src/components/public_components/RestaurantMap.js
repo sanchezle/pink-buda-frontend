@@ -15,11 +15,11 @@ const RestaurantMap = ({ restaurants }) => {
       const map = new window.google.maps.Map(mapRef.current, {
         center: { lat: 41.4036, lng: 2.1744 },
         zoom: 12,
-        mapId: process.env.MAP_ID, // Add this line
+        mapId: process.env.REACT_APP_MAP_ID, // Ensure the environment variable is accessed correctly
       });
 
       restaurants.forEach(restaurant => {
-        new window.google.maps.marker.AdvancedMarkerElement({
+        new window.google.maps.Marker({
           map,
           position: { lat: restaurant.lat, lng: restaurant.lng },
           title: restaurant.name,
