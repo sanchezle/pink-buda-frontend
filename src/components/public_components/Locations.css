@@ -44,7 +44,8 @@ h1{
     overflow: hidden;
     min-width: 200px;
     justify-content: space-between;
-    border: 3px solid var(--primary-color);
+    gap: 3rem;
+    
 
 }
 .map{
@@ -62,8 +63,15 @@ h1{
     text-decoration: none;
     color: var(--primary-color);
 }
-.pin{
+
+.locations #location-pin{
     height: auto;
-    max-width: 25%;
+    min-width: 20%;
+    max-width: 24%;;
     margin-bottom: 2rem;
+}
+.locations #location-pin-mini img{
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }

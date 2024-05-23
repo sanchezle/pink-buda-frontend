@@ -22,8 +22,8 @@ const Footer = () => {
                             <i className="fab fa-instagram" ></i>
                         </a>
 
-                        <a href="tel:0034 931 97 41 03" onClick={(event) => event.preventDefault()}>
-                           < FontAwesomeIcon icon={faPhone}style={{ fontSize: '50px',}}/>
+                        <a href="tel:0034 931 97 41 03">
+                            <FontAwesomeIcon icon={faPhone} style={{ fontSize: '50px' }}/>
                         </a>
                         <a href="mailto:pinkbuda@gmail.com" aria-label="Email" class="email-link">
                             <i class="fas fa-envelope"></i>
