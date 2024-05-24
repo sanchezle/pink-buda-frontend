@@ -25,9 +25,9 @@ const Locations = () => {
         </div>
       </div>
       <div className='addresses'>
-              <h2><a href="https://www.google.es/maps/place/C%2F+de+Verdi,+31,+Gr%C3%A0cia,+08012+Barcelona/@41.4037934,2.1566978,17z"> &#x2665; C/ Verdí, 31, Gracia</a></h2>
+              <h2><a href="https://www.google.es/maps/place/C%2F+de+Verdi,+31,+Gr%C3%A0cia,+08012+Barcelona/@41.4037934,2.1566978,17z">&#x1F4CD; C/ Verdí, 31</a></h2>
               
-              <h2><a href="https://www.google.es/maps/place/C%2F+de+Sic%C3%ADlia,+334,+Eixample,+08025+Barcelona/@41.4033762,2.168834,17z">&#x2665; C/ Sicilia, 334, Sagrada familia</a></h2>             
+              <h2><a href="https://www.google.es/maps/place/C%2F+de+Sic%C3%ADlia,+334,+Eixample,+08025+Barcelona/@41.4033762,2.168834,17z">&#x1F4CD; C/ Sicilia, 334</a></h2>             
 
        </div>
     </div>
