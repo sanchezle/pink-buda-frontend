@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from './images/logonav.png';
+import logo from './images/logonav2.png';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
 
@@ -25,17 +25,9 @@ const Navbar = () => {
           )}
         </div>
         <ul className={click ? "nav-menu active" : "nav-menu"}>
-          <li className='nav-item'>
-            <a href='/Menu' onClick={closeMenu}>Menu</a>
-          </li>
-          <li className='nav-item'>
-            <a href='#delivery' onClick={closeMenu}>Delivery</a>
-          </li>
+
           <li className='nav-item'>
             <Link to='/login' onClick={closeMenu}>Login</Link>
-          </li>
-          <li className='nav-item'>
-            <Link to='/reserva' onClick={closeMenu}>Reserva</Link>
           </li>
         </ul>
       </nav>

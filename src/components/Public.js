@@ -4,6 +4,7 @@ import Delivery from './public_components/Delivery';
 import Footer from './public_components/Footer';
 import Slideshow from './public_components/Slideshow';
 import Locations from './public_components/Locations';
+import Cover from './public_components/Cover';  
 
 import './Public.css';
 
@@ -28,6 +29,7 @@ const Public = () => {
   return (
     <div className="public" id="root">
       <Navbar />
+      <Cover/>
       <div className="slideshow-wrapper">
         <Slideshow images={images} interval={3000} />
       
