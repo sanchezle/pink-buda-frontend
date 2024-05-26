@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
+  padding-top: 1em;
 }
 
 .slideshow-container {
@@ -10,7 +11,7 @@
     width: 80%;
     height: auto;
     overflow: hidden;
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
   
   .slideshow-wrapper {

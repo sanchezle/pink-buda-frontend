@@ -14,12 +14,7 @@ const AboutPage = () => {
           <strong>Nuestra Historia</strong><br />
           Fundada por un grupo de amigos apasionados por la comida y la buena compañía, Pink Buda Burgers nació con la visión de ofrecer algo más que una simple hamburguesa. Queríamos crear una experiencia culinaria que dejara una impresión duradera en nuestros clientes. Así que nos pusimos manos a la obra, experimentando con ingredientes frescos y sabores audaces.
         </p>
-        <p className="text">
-          <strong>Nuestro Compromiso</strong><br />
-          <em>Calidad Superior:</em> Utilizamos carne de res de primera calidad, sazonada y cocida a la perfección. Cada hamburguesa es una obra maestra de sabor y textura.<br />
-          <em>Variedad Creativa:</em> Nuestro menú ofrece una amplia variedad de hamburguesas, desde las clásicas hasta las más atrevidas. ¿Quieres una “Smash Burger” con queso fundido y cebolla caramelizada? ¡Lo tenemos!<br />
-          <em>Ambiente Acogedor:</em> En Pink Buda Burgers, no solo servimos comida, sino también sonrisas. Nuestro personal amable y el ambiente relajado te harán sentir como en casa.
-        </p>
+
       </div>
     </div>
   );

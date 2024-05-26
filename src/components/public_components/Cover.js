@@ -16,9 +16,9 @@ const Cover = ({ imageUrl }) => {
                 <Link to="/reserva" className="button">
                     Reserva
                 </Link>
-                <Link to="/delivery" className="button">
+                <a href="#delivery" className="button">
                     Delivery
-                </Link>
+                </a>
             </div>
         </div>
     );

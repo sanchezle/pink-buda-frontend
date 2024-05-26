@@ -13,7 +13,7 @@
 .button {
     background-color: transparent;
     border: 3px solid white;
-    color: white;
+    color: var(--primary-color);
     font-weight: bold;
     padding: 10px 20px;
     margin: 20px;
@@ -34,7 +34,7 @@
 /* Media queries for mobile devices */
 @media (max-width: 768px) {
     .cover {
-        height: 80vh; /* Maintain full height */
+        height: 70vh; /* Maintain full height */
         background-size: 150%; /* Zoom out effect */
         background-position: center; /* Center the image */
         flex-direction: column; /* Stack elements vertically */
