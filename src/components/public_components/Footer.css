@@ -5,6 +5,7 @@
     display: grid;
     grid-template-columns: 1fr  ;
     margin-top:auto;
+    padding-top: 2rem;
 
 }
 .footer .container {
