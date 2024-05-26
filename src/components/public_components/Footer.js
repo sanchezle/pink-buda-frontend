@@ -2,7 +2,6 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 
 const phoneIconStyle = {
     fontSize: '50px',
@@ -23,7 +22,7 @@ const Footer = () => {
                             <i className="fab fa-instagram" ></i>
                         </a>
                         <a href="https://www.facebook.com/pinkbudaburgerbar" target="_blank" rel="noopener noreferrer">
-                            <FontAwesomeIcon icon={faFacebook} style={phoneIconStyle}/>
+                            <i class="fa-brands fa-facebook-f"></i>
                         </a>
 
                         <a href="tel:0034 931 97 41 03">
