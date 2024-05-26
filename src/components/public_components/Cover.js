@@ -11,7 +11,7 @@ const Cover = ({ imageUrl }) => {
         >
             <div className="buttons">
                 <Link to="/menu" className="button">
-                    Menu
+                    Menú
                 </Link>
                 <Link to="/reserva" className="button">
                     Reserva

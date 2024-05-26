@@ -2,6 +2,7 @@ import React from 'react'
 import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
 
 const phoneIconStyle = {
     fontSize: '50px',
@@ -14,18 +15,15 @@ const Footer = () => {
         <div className='footer'>
             <div className='container'>
                     <div className='footer-content'>
-                    <ul className='links-footer'>
-                     
-                        <li ><a href='/menu'>Menu</a></li>
-                        <li><a href='/reserva'>Reserva</a></li>
 
-                        
-                    </ul>
 
 
                     <div className="social-icons">
                         <a href="https://www.instagram.com/pinkbudaburgerbar/" target="_blank" rel="noopener noreferrer">
                             <i className="fab fa-instagram" ></i>
+                        </a>
+                        <a href="https://www.facebook.com/pinkbudaburgerbar" target="_blank" rel="noopener noreferrer">
+                            <FontAwesomeIcon icon={faFacebook} style={phoneIconStyle}/>
                         </a>
 
                         <a href="tel:0034 931 97 41 03">
@@ -39,7 +37,7 @@ const Footer = () => {
                 </div>
                 <div className='bottom'>
                     <span className='line'></span>
-                    <p>© 2021 Pink Buda Burger. All rights reserved</p>
+                    <p>© 2024 Pink Buda Burger. All rights reserved</p>
                 </div>
             </div>
         </div>

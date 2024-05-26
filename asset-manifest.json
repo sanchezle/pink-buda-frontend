@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.8d91fc5d.css",
-    "main.js": "/static/js/main.fb86b9e7.js",
+    "main.css": "/static/css/main.2728375e.css",
+    "main.js": "/static/js/main.10a08dd2.js",
     "static/media/image1.png": "/static/media/image1.a756e464228dbd0637fe.png",
     "static/media/image2.png": "/static/media/image2.a756e464228dbd0637fe.png",
     "static/media/image4.png": "/static/media/image4.40505fe9a11a22cbf3ed.png",
@@ -21,11 +21,11 @@
     "static/media/logonav2.png": "/static/media/logonav2.50450c4af66cd47f34b6.png",
     "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
-    "main.8d91fc5d.css.map": "/static/css/main.8d91fc5d.css.map",
-    "main.fb86b9e7.js.map": "/static/js/main.fb86b9e7.js.map"
+    "main.2728375e.css.map": "/static/css/main.2728375e.css.map",
+    "main.10a08dd2.js.map": "/static/js/main.10a08dd2.js.map"
   },
   "entrypoints": [
-    "static/css/main.8d91fc5d.css",
-    "static/js/main.fb86b9e7.js"
+    "static/css/main.2728375e.css",
+    "static/js/main.10a08dd2.js"
   ]
 }

@@ -15,6 +15,7 @@
 
 }
 .footer-content{
+  
   display: flex;
   justify-content: space-between;
  
@@ -64,6 +65,7 @@
   
 }
 .footer .social-icons a i {
+
   display: flex;
   flex-direction: column;
   font-size: 60px; /* Adjust this value to increase or decrease the icon size */
