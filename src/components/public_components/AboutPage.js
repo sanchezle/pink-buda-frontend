@@ -8,7 +8,7 @@ const AboutPage = () => {
         <h1 className="title">Acerca de Nosotros</h1>
         <p className="subtitle">Seriedad en el Sabor</p>
         <p className="text">
-          En Pink Buda Burgers, no tomamos las hamburguesas a la ligera. Desde nuestro humilde comienzo en 2023 en el corazón de Barcelona, nos hemos dedicado a crear las hamburguesas más deliciosas y satisfactorias que puedas encontrar. Nuestro eslogan lo dice todo: <strong>"We Are Serious About Smash"</strong>.
+          En Pink Buda Burgers, no tomamos las hamburguesas a la ligera. Desde nuestro humilde comienzo en 2021 en el corazón de Barcelona, nos hemos dedicado a crear las hamburguesas más deliciosas y satisfactorias que puedas encontrar. Nuestro eslogan lo dice todo: <strong>"We Are Serious About Smash"</strong>.
         </p>
         <p className="text">
           <strong>Nuestra Historia</strong><br />
