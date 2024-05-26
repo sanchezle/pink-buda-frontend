@@ -14,7 +14,7 @@ const Slideshow = ({ images, interval = 3000 }) => {
   }, [images.length, interval]);
 
   return (
-    <div className="whole-containter" id="container-slideshow">
+    <div className="container-slideshow">
       <div className="slideshow-container">
         <div className="slideshow-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
           {images.map((image, index) => (
@@ -23,7 +23,7 @@ const Slideshow = ({ images, interval = 3000 }) => {
             </div>
           ))}
         </div>
-        </div>
+      </div>
     </div>
   );
 };
