@@ -37,11 +37,9 @@ const Public = () => {
       
       </div>
 
-     
-      <Locations />
-      
-
       <Delivery />
+      
+      <Locations />
       
       <Footer />
     
