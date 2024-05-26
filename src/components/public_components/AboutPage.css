@@ -1,40 +1,47 @@
 /* AboutPage.css */
-.about-page h1{
-  color: var(--primary-color);
-  
-}
 .about-page {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    background-color: black;
-    color:var(--primary-color);
-    padding: 20px;
-    font-family: 'Gobold', sans-serif;
-  }
-  
-  .title {
-    display : flex;
-    justify-content: flex-start;
-    border: 3px solid black;
-    font-family: 'extra1Surimi', sans-serif;
-    font-size: 35px;
-    font-weight: extra1bold;
-  }
-  
-  .subtitle {
-    font-family: 'Gotham Book', sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 15px;
-  }
-  
-  .about-page .text {
-    padding: 15px;
-    height: 50%;
-    border: 3px solid black;
-    font-family: 'Gotham Book', sans-serif;
-    font-size: 16px;
-    font-weight: 500;
-  }
-  
+  display: flex;
+  justify-content: center; /* Center the content container */
+  background-color: black;
+  color: var(--primary-color);
+  padding: 20px;
+  font-family: 'Gobold', sans-serif;
+}
+
+.content {
+  width: 80%; /* Limit the content width to 80% */
+}
+
+.title {
+  color: var(--primary-color);
+  font-family: 'extra1Surimi', sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  padding: 10px;
+  text-align: left; /* Ensure title is left-aligned */
+}
+
+.subtitle {
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 15px 0;
+  margin: 0;
+  text-align: left; /* Ensure subtitle is left-aligned */
+}
+
+.text {
+  font-family: 'Gotham Book', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 15px 0;
+  margin: 0;
+  border: 3px solid black;
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+/* Ensure the text blocks have sufficient spacing */
+.text + .text {
+  margin-top: 15px;
+}

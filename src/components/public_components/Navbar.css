@@ -56,6 +56,10 @@
     display: none;
     color: var(--primary-color);
 }
+.header.hidden {
+    top: -100px; /* or the height of your navbar */
+    transition: top 0.3s ease-in-out;
+}
 
 
 
