@@ -1,12 +1,11 @@
 
 
 .footer{
+    background-color: var(--primary-color);
     display: grid;
     grid-template-columns: 1fr  ;
     margin-top:auto;
 
-    border: 3px solid #EA79A2;
-    border-radius: 20px;
 }
 .footer .container {
   display: flex;
@@ -68,7 +67,7 @@
   display: flex;
   flex-direction: column;
   font-size: 60px; /* Adjust this value to increase or decrease the icon size */
-  color:var(--primary-color); 
+  color:black;
   
 }
 
@@ -90,7 +89,7 @@
 
 }
 .footer .container .footer-content .links-footer li a {
-  color: var(--primary-color);
+  color: black;
   font-size: 1.5rem;
   font-weight: 1000;
   text-decoration: none;

@@ -14,14 +14,16 @@ const Slideshow = ({ images, interval = 3000 }) => {
   }, [images.length, interval]);
 
   return (
-    <div className="slideshow-container">
-      <div className="slideshow-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
-        {images.map((image, index) => (
-          <div className="slide" key={index}>
-            <img src={image} alt={`Slide ${index}`} />
-          </div>
-        ))}
-      </div>
+    <div className="whole-containter" id="container-slideshow">
+      <div className="slideshow-container">
+        <div className="slideshow-wrapper" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
+          {images.map((image, index) => (
+            <div className="slide" key={index}>
+              <img src={image} alt={`Slide ${index}`} />
+            </div>
+          ))}
+        </div>
+        </div>
     </div>
   );
 };

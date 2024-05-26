@@ -3,6 +3,12 @@ import './Footer.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone } from '@fortawesome/free-solid-svg-icons';
 
+const phoneIconStyle = {
+    fontSize: '50px',
+    color: 'black'
+
+}
+
 const Footer = () => {
     return (
         <div className='footer'>
@@ -23,7 +29,7 @@ const Footer = () => {
                         </a>
 
                         <a href="tel:0034 931 97 41 03">
-                            <FontAwesomeIcon icon={faPhone} style={{ fontSize: '50px' }}/>
+                            <FontAwesomeIcon icon={faPhone} style={phoneIconStyle}/>
                         </a>
                         <a href="mailto:pinkbuda@gmail.com" aria-label="Email" class="email-link">
                             <i class="fas fa-envelope"></i>

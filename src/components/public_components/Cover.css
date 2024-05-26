@@ -1,0 +1,58 @@
+.cover {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.button {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    margin: 20px;
+}
+
+.buttons {
+    display: flex;
+    width: 10%;
+    height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 10%;
+    gap: 10px;
+}
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    .cover {
+        height: 80vh; /* Maintain full height */
+        background-size: 150%; /* Zoom out effect */
+        background-position: center; /* Center the image */
+        flex-direction: column; /* Stack elements vertically */
+
+    }
+
+    .button {
+        
+        padding: 8px 7px; /* Reduce padding */
+        margin:10px; /* Reduce margin */
+    }
+
+
+    .buttons {
+        gap: 1px;
+        width: 100%; /* Increase width to fit buttons */
+        height: auto; /* Adjust height */
+        bottom: 1%; /* Adjust position */
+        justify-content: center; /* Center buttons */
+    }
+}

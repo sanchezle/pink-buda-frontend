@@ -1,13 +1,21 @@
-.slideshow-container {
+#container-slideshow{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
 
-    width: 90%;
+.slideshow-container {
+    background-color: black;
+    width: 80%;
     height: auto;
     overflow: hidden;
-    margin-top: 4rem;
+    margin-top: 1rem;
   }
   
   .slideshow-wrapper {
     display: flex;
+    
     justify-content: space-around;
     transition: transform 0.5s ease-in-out;
   }
