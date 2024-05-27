@@ -17,11 +17,15 @@
     font-weight: bold;
     padding: 10px 20px;
     margin: 20px;
+    flex: 1; /* Make all buttons take up equal space */
+    text-align: center; /* Center the text inside the buttons */
+    max-width: 150px; /* Set a max-width for responsiveness */
+    min-width: 100px; /* Set a min-width to ensure buttons don't get too small */
 }
 
 .buttons {
     display: flex;
-    width: 10%;
+    width: 50%; /* Adjust width to accommodate button sizes */
     height: 50px;
     flex-direction: row;
     justify-content: center;
@@ -38,15 +42,15 @@
         background-size: 150%; /* Zoom out effect */
         background-position: center; /* Center the image */
         flex-direction: column; /* Stack elements vertically */
-
     }
 
     .button {
-        
-        padding: 8px 7px; /* Reduce padding */
-        margin:10px; /* Reduce margin */
+        flex-shrink: 1;
+        padding: 8px 6px; /* Reduce padding */
+        margin: 8px; /* Reduce margin */
+        max-width: 25%; /* Set a max-width for responsiveness */
+        min-width: 20%; 
     }
-
 
     .buttons {
         gap: 1px;

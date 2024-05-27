@@ -10,7 +10,7 @@ const Cover = ({ imageUrl }) => {
             style={{ backgroundImage: `url(${coverImage})` }}
         >
             <div className="buttons">
-                <Link to="/menu" className="button">
+                <Link to="/menu"  id="Menu button" className="button">
                     Menú
                 </Link>
                 <Link to="/reserva" className="button">
