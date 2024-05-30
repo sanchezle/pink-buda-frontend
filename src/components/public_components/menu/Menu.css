@@ -1,0 +1,18 @@
+.menu-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.menu-buttons button,
+.menu-navigation button {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menu-content img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #000; /* Example style */
+}

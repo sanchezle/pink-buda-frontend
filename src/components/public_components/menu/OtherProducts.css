@@ -1,0 +1,44 @@
+/* OtherProducts.css */
+.other-products {
+    width: 100%;
+}
+
+.other-products .container {
+    width: 1240px;
+    margin: 4rem auto;
+    padding: 4rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.other-products .category {
+    display: flex;
+    flex-direction: column;
+    background: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 1rem;
+    height: auto;
+}
+
+.other-products .category h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.other-products .category ul {
+    list-style: none;
+    padding: 0;
+}
+
+.other-products .category ul li {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
