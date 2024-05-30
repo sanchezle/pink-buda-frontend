@@ -19,7 +19,7 @@ const BurgersGrid  = ({ burger }) => {
     return (
         <div className="burgers">
             <div className="container">
-                <h2> C A R T A</h2>
+                <h2> Burgers</h2>
                 <div className="content">
                     {Burgers.map(burger => <BurgersCard key={burger.id} burger={burger} />)}
                 </div>
