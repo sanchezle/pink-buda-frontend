@@ -1,19 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.cd5d9e73.css",
-    "main.js": "/static/js/main.35e6f576.js",
+    "main.css": "/static/css/main.c0139fc7.css",
+    "main.js": "/static/js/main.0aee6860.js",
     "static/media/image1.png": "/static/media/image1.a756e464228dbd0637fe.png",
     "static/media/image2.png": "/static/media/image2.a756e464228dbd0637fe.png",
     "static/media/image4.png": "/static/media/image4.40505fe9a11a22cbf3ed.png",
     "static/media/image3.png": "/static/media/image3.d2c093b6eaecd7774101.png",
     "static/media/image5.png": "/static/media/image5.3260eda6645f30af0481.png",
     "static/media/image6.png": "/static/media/image6.3260eda6645f30af0481.png",
-    "static/media/menu-catala22.jpg": "/static/media/menu-catala22.3efe1f24d890fb2465fe.jpg",
-    "static/media/menu-es2.jpg": "/static/media/menu-es2.d61434235c8a8214bbe8.jpg",
-    "static/media/menu-english222.jpg": "/static/media/menu-english222.81f7da633e7ac974cdc4.jpg",
-    "static/media/menu-catala12.jpg": "/static/media/menu-catala12.c8b166de50474e1a106f.jpg",
-    "static/media/menu-english12.jpg": "/static/media/menu-english12.a0a6d5e4b1f415ee7728.jpg",
-    "static/media/menu-es1.jpg": "/static/media/menu-es1.eaefb6e2e5813b16ea28.jpg",
     "static/media/cover2.jpg": "/static/media/cover2.fca51773e1f92729efd8.jpg",
     "static/media/location-pin.png": "/static/media/location-pin.034689ec5bf3cd6fde77.png",
     "static/media/logo_just_eat.png": "/static/media/logo_just_eat.c19be16aca8cc7f608b7.png",
@@ -21,11 +15,11 @@
     "static/media/logonav2.png": "/static/media/logonav2.50450c4af66cd47f34b6.png",
     "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
-    "main.cd5d9e73.css.map": "/static/css/main.cd5d9e73.css.map",
-    "main.35e6f576.js.map": "/static/js/main.35e6f576.js.map"
+    "main.c0139fc7.css.map": "/static/css/main.c0139fc7.css.map",
+    "main.0aee6860.js.map": "/static/js/main.0aee6860.js.map"
   },
   "entrypoints": [
-    "static/css/main.cd5d9e73.css",
-    "static/js/main.35e6f576.js"
+    "static/css/main.c0139fc7.css",
+    "static/js/main.0aee6860.js"
   ]
 }
