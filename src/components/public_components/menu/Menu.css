@@ -1,10 +1,15 @@
+h1{
+  font-size: 3rem;
+}
 .menu-container {
   text-align: center;
   padding: 20px;
 }
 
-.menu-buttons button,
+
 .menu-navigation button {
+  position: absolute;
+  border: 3px solid #000;
   margin: 5px;
   padding: 10px;
   font-size: 16px;
@@ -15,4 +20,26 @@
   max-width: 100%;
   height: auto;
   border: 2px solid #000; /* Example style */
+}
+
+@media screen and (max-width: 940px) {
+  .menu-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 110vw;
+    height: auto;
+    margin: 0rem 0;
+    padding: 0rem 0;
+  }
+  
+  .menu-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-navigation button {
+    margin: 5px;
+  }
+
 }
