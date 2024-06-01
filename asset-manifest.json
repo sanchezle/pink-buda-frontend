@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.3183fac7.css",
-    "main.js": "/static/js/main.66cf64fb.js",
+    "main.js": "/static/js/main.326d7eb9.js",
     "static/media/image1.png": "/static/media/image1.a756e464228dbd0637fe.png",
     "static/media/image2.png": "/static/media/image2.a756e464228dbd0637fe.png",
     "static/media/polloburg1.png": "/static/media/polloburg1.a8fdb852bdc97e2feb42.png",
@@ -19,10 +19,10 @@
     "static/media/Uber_eats_logo.svg": "/static/media/Uber_eats_logo.27f08b4a0d3b5011a55c0d4f6063dba8.svg",
     "index.html": "/index.html",
     "main.3183fac7.css.map": "/static/css/main.3183fac7.css.map",
-    "main.66cf64fb.js.map": "/static/js/main.66cf64fb.js.map"
+    "main.326d7eb9.js.map": "/static/js/main.326d7eb9.js.map"
   },
   "entrypoints": [
     "static/css/main.3183fac7.css",
-    "static/js/main.66cf64fb.js"
+    "static/js/main.326d7eb9.js"
   ]
 }
