@@ -12,9 +12,10 @@
 
 .button {
     background-color: transparent;
-    border: 3px solid white;
+    border: 4px solid white;
     color: var(--primary-color);
-    font-weight: bold;
+    border-radius: 5px;
+    font-weight: extra-bold;
     padding: 10px 20px;
     margin: 20px;
     flex: 1; /* Make all buttons take up equal space */
@@ -22,6 +23,7 @@
     max-width: 150px; /* Set a max-width for responsiveness */
     min-width: 100px; /* Set a min-width to ensure buttons don't get too small */
 }
+
 
 .buttons {
     display: flex;
