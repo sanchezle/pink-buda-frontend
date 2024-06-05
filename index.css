@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #EB7AA4;
-  --primary-dark: #ff34d3;
-  --secondary-color: #fd0782;
+  --secondary-color: #FA59E6;
+  --primary-color: #FF94F0;
+  --primary-dark: #FA59E6;
+  --secondary-color: #FA59E6;
   --secondary-dark:#e30258;
   --overlay:rgba(0,0 ,0,.7);
 }
